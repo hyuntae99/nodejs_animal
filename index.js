@@ -17,13 +17,13 @@ app.get('/sound/:name', (req, res) => {
     const { name } = req.params 
 
     if(name == 'dog'){
-        res.json({'sound' : '멍멍'})
+        res.json({'sound' : '멍멍', 'img' : 'https://t3.ftcdn.net/jpg/02/73/16/24/240_F_273162497_ShAAB1TH0vhM4UUWbhBuao8jtGBDubwD.jpg'})
     } else if(name == 'cat'){
         res.json({'sound' : '냐옹', 'img' : 'https://purr.objects-us-east-1.dream.io/i/mjzu8336.jpg'})
     } else if(name == 'pig'){
-        res.json({'sound' : '꿀꿀'})
+        res.json({'sound' : '꿀꿀', 'img' : 'https://t3.ftcdn.net/jpg/02/65/89/56/240_F_265895626_wrp1v1QxAeIaUQ1kNw3kru1ie7J2J0g5.jpg'})
     } else{
-        res.json({'sound' : '알 수 없음'})
+        res.json({'sound' : '알 수 없음', 'img' : 'https://t3.ftcdn.net/jpg/05/06/50/64/240_F_506506414_9VcB8TXutTiG6WkIzymnD2OA9tcG5hVs.jpg'})
     }
 })
 
